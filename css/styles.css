@@ -617,6 +617,41 @@ img {
   border-top: none;
 }
 
+/* Overlay */
+
+.card-box {
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding: 63px 24px;
+  background-color: rgba(33, 150, 243, 0.9);
+  transform: translateY(100%);
+  transition: transform var(--animation-fast);
+}
+
+.overlay-text {
+  text-align: left;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  color: var(--secondary-light-txt-clr);
+}
+
+.portfolio-link:hover .overlay {
+  transform: translateY(0);
+}
+
+.portfolio-link:focus .overlay {
+  transform: translateY(0);
+}
+
 /* Modal */
 
 .backdrop {
