@@ -21,6 +21,10 @@ body {
   color: var(--main-txt-clr);
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 /* Based styles */
 
 .container {
